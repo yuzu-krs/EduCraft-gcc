@@ -9,6 +9,7 @@
 //Block_id(東西南北など)
 
 // setBlock関数の実装
-void setBlock(int id, int x, int y, int z, const char *block_name, int block_id) {
+void setBlock(int x, int y, int z, const char *block_name, int block_id) {
+    int id=99999;
     printf("%d,%d,%d,%d,%s,%d\n",id,x,y,z,block_name,block_id);
 }
