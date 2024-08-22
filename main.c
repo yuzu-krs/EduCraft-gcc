@@ -1,15 +1,11 @@
 #include <stdio.h>
-#include "setblock.h"
 
-int main(void){
-	int x=100;
-	int y=64;
-	int z=100;
+int main(void) {
+    
+//printf("Hello Worl1d\n");  // 現在のカウンターの値を出力    
+    while(1){
+        printf("Hello \n");  // 現在のカウンターの値を出力
+    }
 
-	const char *block_name="stone";
-
-	int block_id=0;
-
-	setBlock(x,y,z,block_name,block_id);
-	return 0;
+    return 0;
 }
