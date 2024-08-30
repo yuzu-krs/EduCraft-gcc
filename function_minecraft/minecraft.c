@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "setblock.h"  // ヘッダファイルをインクルード
+#include "minecraft.h"  // ヘッダファイルをインクルード
 
 //Minecraftに読み込ませるときにsetBlock関数と識別させるid
 //x座標

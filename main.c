@@ -1,11 +1,11 @@
 #include <stdio.h>
+#include "minecraft.h" // Minecraft APIを模倣したヘッダーファイル
+
+// ブロックのIDを定義
+#define GLASS "glass"
 
 int main(void) {
-    
-//printf("Hello Worl1d\n");  // 現在のカウンターの値を出力    
-    while(1){
-        printf("Hello \n");  // 現在のカウンターの値を出力
-    }
-
+    setBlock(100,100,100,GLASS,0);    
+    setBlock(100,101,100,GLASS,0);    
     return 0;
 }
