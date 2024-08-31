@@ -1,11 +1,13 @@
 #include <stdio.h>
+
 #include "minecraft.h" // Minecraft APIを模倣したヘッダーファイル
 
 // ブロックのIDを定義
-#define GLASS "glass"
+#define TNT "tnt"
+#define REDSTONE "redstone_block"
 
 int main(void) {
-    setBlock(100,100,100,GLASS,0);    
-    setBlock(100,101,100,GLASS,0);    
+    fillBlock(-72,74,-79,-63,65,-70,TNT,0);
+    setBlock(-72,74,-79,REDSTONE,0);
     return 0;
 }
