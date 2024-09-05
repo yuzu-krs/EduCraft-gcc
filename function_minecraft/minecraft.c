@@ -3,18 +3,29 @@
 
 /*############################################
 ##############################################*/
-//Minecraftに読み込ませるときにsetBlock関数と識別させるid
+//Minecraftに読み込ませるときに識別させるid
 //x座標
 //y座標
 //z座標
 //Block名前(例:stone)
 //Block_id(東西南北など)
 
-// setBlock関数の実装
-void setBlock(int x, int y, int z, const char *block_name, int block_id) {
-    int id=99999;
+void setBlockReplace(int x, int y, int z, const char *block_name, int block_id) {
+    int id=999999999;
     printf("\n%d,%d,%d,%d,%s,%d\n",id,x,y,z,block_name,block_id);
 }
+
+void setBlockKeep(int x, int y, int z, const char *block_name, int block_id) {
+    int id=999999998;
+    printf("\n%d,%d,%d,%d,%s,%d\n",id,x,y,z,block_name,block_id);
+}
+
+void setBlockDestroy(int x, int y, int z, const char *block_name, int block_id) {
+    int id=999999997;
+    printf("\n%d,%d,%d,%d,%s,%d\n",id,x,y,z,block_name,block_id);
+}
+
+
 /*############################################
 ##############################################*/
 
