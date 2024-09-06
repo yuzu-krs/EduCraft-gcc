@@ -45,10 +45,35 @@ void setBlockDestroy(int x, int y, int z, const char *block_name, int block_id) 
 //Block名前(例:stone)
 //Block_id(東西南北など)
 
-// fillBlock関数
-void fillBlock(int x1, int y1, int z1, int x2, int y2, int z2, const char *block_name, int block_id) {
-    int id = -99999; 
+// fill系関数
+void fillDestroy(int x1, int y1, int z1, int x2, int y2, int z2, const char *block_name, int block_id) {
+    int id = 999999996; 
     printf("\n%d,%d,%d,%d,%d,%d,%d,%s,%d\n", id, x1, y1, z1, x2, y2, z2, block_name, block_id);
+}
+
+void fillKeep(int x1, int y1, int z1, int x2, int y2, int z2, const char *block_name, int block_id) {
+    int id = 999999995; 
+    printf("\n%d,%d,%d,%d,%d,%d,%d,%s,%d\n", id, x1, y1, z1, x2, y2, z2, block_name, block_id);
+}
+
+void fillHollow(int x1, int y1, int z1, int x2, int y2, int z2, const char *block_name, int block_id) {
+    int id = 999999994; 
+    printf("\n%d,%d,%d,%d,%d,%d,%d,%s,%d\n", id, x1, y1, z1, x2, y2, z2, block_name, block_id);
+}
+
+void fillOutline(int x1, int y1, int z1, int x2, int y2, int z2, const char *block_name, int block_id) {
+    int id = 999999993; 
+    printf("\n%d,%d,%d,%d,%d,%d,%d,%s,%d\n", id, x1, y1, z1, x2, y2, z2, block_name, block_id);
+}
+
+void fillReplace(int x1, int y1, int z1, int x2, int y2, int z2, const char *block_name, int block_id) {
+    int id = 999999992; 
+    printf("\n%d,%d,%d,%d,%d,%d,%d,%s,%d\n", id, x1, y1, z1, x2, y2, z2, block_name, block_id);
+}
+
+void fillReplaceBlock(int x1, int y1, int z1, int x2, int y2, int z2, const char *block_name1, int block_id1, const char *block_name2, int block_id2){
+    int id = 999999991; 
+    printf("\n%d,%d,%d,%d,%d,%d,%d,%s,%d,%s,%d\n", id, x1, y1, z1, x2, y2, z2, block_name1, block_id1, block_name2, block_id2);
 }
 /*############################################
 ##############################################*/
