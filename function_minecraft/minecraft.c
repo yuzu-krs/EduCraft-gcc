@@ -77,3 +77,52 @@ void fillReplaceBlock(int x1, int y1, int z1, int x2, int y2, int z2, const char
 }
 /*############################################
 ##############################################*/
+
+void cloneReplaceNormal(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,int z){
+    int id = 999999989; 
+    printf("\n%d,%d,%d,%d,%d,%d,%d,%d,%d,%d\n", id, x1, y1, z1, x2, y2, z2, x, y, z);
+}
+
+void cloneReplaceForce(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,int z){
+    int id = 999999988; 
+    printf("\n%d,%d,%d,%d,%d,%d,%d,%d,%d,%d\n", id, x1, y1, z1, x2, y2, z2, x, y, z);
+}
+
+void cloneReplaceMove(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,int z){
+    int id = 999999987; 
+    printf("\n%d,%d,%d,%d,%d,%d,%d,%d,%d,%d\n", id, x1, y1, z1, x2, y2, z2, x, y, z);
+}
+
+
+
+void cloneMaskedNormal(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,int z){
+    int id = 999999986; 
+    printf("\n%d,%d,%d,%d,%d,%d,%d,%d,%d,%d\n", id, x1, y1, z1, x2, y2, z2, x, y, z);
+}
+
+void cloneMaskedForce(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,int z){
+    int id = 999999985; 
+    printf("\n%d,%d,%d,%d,%d,%d,%d,%d,%d,%d\n", id, x1, y1, z1, x2, y2, z2, x, y, z);
+}
+
+void cloneMaskedMove(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,int z){
+    int id = 999999984; 
+    printf("\n%d,%d,%d,%d,%d,%d,%d,%d,%d,%d\n", id, x1, y1, z1, x2, y2, z2, x, y, z);
+}
+
+
+
+void cloneFilteredNormal(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,int z, const char *block_name, int block_id){
+    int id = 999999983; 
+    printf("\n%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%s,%d\n", id, x1, y1, z1, x2, y2, z2, x, y, z,block_name,block_id);
+}
+
+void cloneFilteredForce(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,int z, const char *block_name, int block_id){
+    int id = 999999982; 
+    printf("\n%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%s,%d\n", id, x1, y1, z1, x2, y2, z2, x, y, z,block_name,block_id);
+}
+
+void cloneFilteredMove(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,int z, const char *block_name, int block_id){
+    int id = 999999981; 
+    printf("\n%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%s,%d\n", id, x1, y1, z1, x2, y2, z2, x, y, z,block_name,block_id);
+}

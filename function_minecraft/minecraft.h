@@ -24,4 +24,29 @@ void fillReplace(int x1, int y1, int z1, int x2, int y2, int z2, const char *blo
 
 void fillReplaceBlock(int x1, int y1, int z1, int x2, int y2, int z2, const char *block_name1, int block_id1, const char *block_name2, int block_id2);
 
+
+
+// clone系関数のプロトタイプ宣言
+
+void cloneReplaceNormal(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,int z);
+
+void cloneReplaceForce(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,int z);
+
+void cloneReplaceMove(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,int z);
+
+
+void cloneMaskedNormal(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,int z);
+
+void cloneMaskedForce(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,int z);
+
+void cloneMaskedMove(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,int z);
+
+
+void cloneFilteredNormal(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,int z, const char *block_name, int block_id);
+
+void cloneFilteredForce(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,int z, const char *block_name, int block_id);
+
+void cloneFilteredMove(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,int z, const char *block_name, int block_id);
+
+
 #endif // MINECRAFT_H
