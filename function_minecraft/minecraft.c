@@ -126,3 +126,12 @@ void cloneFilteredMove(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,int
     int id = 999999981; 
     printf("\n%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%s,%d\n", id, x1, y1, z1, x2, y2, z2, x, y, z,block_name,block_id);
 }
+
+
+
+//#########################
+
+void summon(const char *entity,int x,int y,int z,const char *status){
+    int id=999999979
+    printf("\n%s,%d,%d,%d,%s\n",entity,x,y,z,status);
+}

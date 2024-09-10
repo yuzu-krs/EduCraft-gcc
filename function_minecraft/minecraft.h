@@ -49,4 +49,9 @@ void cloneFilteredForce(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,in
 void cloneFilteredMove(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,int z, const char *block_name, int block_id);
 
 
+
+
+//summonコマンド
+void summon(const char *entity,int x,int y,int z,const char *status)
+
 #endif // MINECRAFT_H
