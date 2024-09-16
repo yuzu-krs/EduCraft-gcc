@@ -1,10 +1,24 @@
 #include <stdio.h>
 #include "minecraft.h"
+#include <unistd.h>  // sleep() のために必要
 
-#define ENTITY "Sheep"
-#define JSON "{}"  
+#define COMMAND1 "time set day"
+#define COMMAND2 "time set 16000"
 
 int main(void) {
-    summon(ENTITY,1967,73,1968,JSON);
+    while (1) {
+        // 朝に変更
+        printf("Setting time to day\n");
+        sendCommand(COMMAND1);
+        fflush(stdout);  // これで標準出力をフラッシュ
+        sleep(3);  // 3秒待機
+
+        // 夜に変更
+        printf("Setting time to night\n");
+
+        sendCommand(COMMAND2);
+        fflush(stdout);  // これで標準出力をフラッシュ
+        sleep(3);  // 3秒待機
+    }
     return 0;
 }
