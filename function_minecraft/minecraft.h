@@ -60,4 +60,9 @@ void sendCommand(const char *packet);
 
 
 
+//testforblock
+void testForBlock(int x,int y,int z, const char *block_name, int block_id);
+
+
+
 #endif // MINECRAFT_H

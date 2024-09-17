@@ -142,3 +142,10 @@ void sendCommand(const char *packet){
     int id=999999969;
     printf("\n%d,%s\n",id,packet);
 }
+
+//#########################
+
+void testForBlock(int x,int y,int z, const char *block_name, int block_id){
+    int id=999999959;
+    printf("\n%d,%d,%d,%d,%s,%d\n",id,x,y,z,block_name,block_id);
+}
