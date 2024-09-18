@@ -1,11 +1,9 @@
 #include <stdio.h>
 #include "minecraft.h"
 
-#define STONE "stone"
-
 int main(void) {
 
-    testForBlock(2005,112,2002,STONE,0);
+    testForBlocksAll(2001,112,2001,2003,114,2003,2007,112,2001);
 
     return 0;
 }
