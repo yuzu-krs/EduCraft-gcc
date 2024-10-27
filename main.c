@@ -1,18 +1,22 @@
 #define TNT "tnt"
-#define STONE "stone"
 #define GLASS "glass"
+#define SAND "sand"
+#define GRASS "grass"
+#define WATER "water"
+#define STONE "stone"
+
 
 #include <stdio.h>
-#include "minecraft.h"  // Minecraft APIのヘッダー
+#include "minecraft.h"  
 
-    
 
 int main(void) {
-    int x = -49; // ここに任意のx座標を指定
-    int y = 106; // y座標
-    int z = 12;  // z座標
+    
+    int x=11,y=104,z=5;
 
-    testForBlock(11,104,5,STONE,0);
+    if(testForBlock(7,104,5,SAND,0)&&testForBlock(11,104,5,GLASS,0)){
+        setBlockReplace(9,104,5,TNT,0);
+    }
 
     return 0;
 }

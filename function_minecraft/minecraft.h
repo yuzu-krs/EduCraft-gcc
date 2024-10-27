@@ -61,7 +61,8 @@ void sendCommand(const char *packet);
 
 
 //testforblock
-void testForBlock(int x,int y,int z, const char *block_name, int block_id);
+// ブロックをテストする関数の宣言（int 型の戻り値に修正）
+int testForBlock(int x, int y, int z, const char *block_name, int block_id);
 
 
 
