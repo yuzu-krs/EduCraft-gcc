@@ -1,22 +1,16 @@
-#define TNT "tnt"
-#define GLASS "glass"
-#define SAND "sand"
-#define GRASS "grass"
-#define WATER "water"
-#define STONE "stone"
-
-
 #include <stdio.h>
-#include "minecraft.h"  
+#include "minecraft.h"
 
+int main() {
+    char str[100]; // 入力する文字列用の配列
 
-int main(void) {
-    
-    int x=11,y=104,z=5;
+    // ユーザーに入力を促すメッセージ
+    printf("Please enter a string: "); 
 
-    if(testForBlock(7,104,5,SAND,0)&&testForBlock(11,104,5,GLASS,0)){
-        setBlockReplace(9,104,5,TNT,0);
-    }
+    // m_scanf関数を使って文字列を入力する
+    m_scanf("%s", str);
+
+    printf("You entered: %s\n", str);
 
     return 0;
 }

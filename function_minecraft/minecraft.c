@@ -163,12 +163,38 @@ int testForBlock(int x,int y,int z, const char *block_name, int block_id){
 
 //#########################
 
-void testForBlocksAll(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,int z){
+int testForBlocksAll(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,int z){
     int id=999999949;    
     printf("\n%d,%d,%d,%d,%d,%d,%d,%d,%d,%d\n",id,x1,y1,z1,x2,y2,z2,x,y,z);
+    
+    fflush(stdout); //// ここでバッファをフラッシュして即時出力
+    int number; 
+
+    //プロセスビルダーから
+    scanf("%d", &number); 
+
+    
+    return number; 
 }
 
-void testForBlocksMasked(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,int z){
+int testForBlocksMasked(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,int z){
     int id=999999948;
     printf("\n%d,%d,%d,%d,%d,%d,%d,%d,%d,%d\n",id,x1,y1,z1,x2,y2,z2,x,y,z);
+
+    fflush(stdout); //// ここでバッファをフラッシュして即時出力
+    int number; 
+
+    //プロセスビルダーから
+    scanf("%d", &number); 
+
+    
+    return number; 
+}
+
+
+//minecraftのチャットからscanfに送信する関数
+void m_scanf(const char *format, void *var) {
+    printf("\n999999919\n");
+    fflush(stdout);   // 出力バッファをクリア
+    scanf(format, var);  // 入力を受け取る
 }
