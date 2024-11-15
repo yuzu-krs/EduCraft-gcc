@@ -1,5 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>  // exit() 関数を使うために追加
 #include "minecraft.h"  // ヘッダファイルをインクルード
+
 
 /*############################################
 ##############################################*/
@@ -154,6 +156,14 @@ int testForBlock(int x,int y,int z, const char *block_name, int block_id){
     //プロセスビルダーから
     scanf("%d", &number); 
 
+
+    int err_id=-999999959;
+    // 1, 0 以外の場合は強制終了
+    if (number != 1 && number != 0) {
+        printf("\n%d,エラー: 無効な入力 %d です。プログラムを終了します。\n", err_id,number);
+        exit(1); // プログラムを強制終了
+    }
+
     
     return number; 
 }
@@ -173,6 +183,14 @@ int testForBlocksAll(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,int z
     //プロセスビルダーから
     scanf("%d", &number); 
 
+
+    int err_id=-999999959;
+    // 1, 0 以外の場合は強制終了
+    if (number != 1 && number != 0) {
+        printf("\n%d,エラー: 無効な入力 %d です。プログラムを終了します。\n", err_id,number);
+        exit(1); // プログラムを強制終了
+    }
+
     
     return number; 
 }
@@ -186,6 +204,14 @@ int testForBlocksMasked(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,in
 
     //プロセスビルダーから
     scanf("%d", &number); 
+
+
+    int err_id=-999999959;
+    // 1, 0 以外の場合は強制終了
+    if (number != 1 && number != 0) {
+        printf("\n%d,エラー: 無効な入力 %d です。プログラムを終了します。\n", err_id,number);
+        exit(1); // プログラムを強制終了
+    }
 
     
     return number; 
