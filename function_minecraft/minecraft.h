@@ -1,6 +1,18 @@
 #ifndef MINECRAFT_H
 #define MINECRAFT_H
 
+
+
+
+
+#include "stdio.h"
+// 初期化関数（内部的に使用）
+void initialize_minecraft(void) __attribute__((constructor));
+
+
+
+
+
 // setBlock系関数のプロトタイプ宣言
 void setBlockReplace(int x, int y, int z, const char *block_name, int block_id);
 
