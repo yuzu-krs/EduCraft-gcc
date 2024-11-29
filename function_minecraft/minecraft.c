@@ -233,3 +233,37 @@ void m_scanf(const char *format, void *var) {
     fflush(stdout);   // 出力バッファをクリア
     scanf(format, var);  // 入力を受け取る
 }
+
+
+
+//現在の座標をゲットする関数
+
+int getPositionX(){
+    int id=999999939;
+    printf("\n%d\n",id);
+    fflush(stdout); //// ここでバッファをフラッシュして即時出力
+    int number; 
+    //プロセスビルダーから
+    scanf("%d", &number); 
+    return number;
+}
+
+int getPositionY(){
+    int id=999999938;
+    printf("\n%d\n",id);
+    fflush(stdout); //// ここでバッファをフラッシュして即時出力
+    int number; 
+    //プロセスビルダーから
+    scanf("%d", &number); 
+    return number;
+}
+
+int getPositionZ(){
+    int id=999999937;
+    printf("\n%d\n",id);
+    fflush(stdout); //// ここでバッファをフラッシュして即時出力
+    int number; 
+    //プロセスビルダーから
+    scanf("%d", &number); 
+    return number;
+}

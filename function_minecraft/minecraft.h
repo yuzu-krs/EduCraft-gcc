@@ -91,5 +91,11 @@ int testForBlocksMasked(int x1,int y1,int z1,int x2,int y2,int z2,int x,int y,in
 void m_scanf(const char *format, void *var);
 
 
+//現在の座標をゲットする関数
+int getPositionX();
+int getPositionY();
+int getPositionZ();
+
+
 
 #endif // MINECRAFT_H
